@@ -16,5 +16,16 @@ function addTask() {
     li.classList.toggle("completed");
   });
 
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "🗑";
+  deleteBtn.classList.add("delete-btn");
+  deleteBtn.addEventListener("click", () => {
+    taskList.removeChild(li);
+  });
 
+  li.appendChild(span);
+  li.appendChild(deleteBtn);
+  taskList.appendChild(li);
+
+  taskInput.value = "";
 }
