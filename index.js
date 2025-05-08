@@ -17,7 +17,9 @@ function addTask() {
   });
 
   const deleteBtn = document.createElement("button");
-  deleteBtn.textContent = "🗑";
+  const icon = document.createElement("i");
+  icon.classList.add("fas", "fa-trash");
+  deleteBtn.appendChild(icon);
   deleteBtn.classList.add("delete-btn");
   deleteBtn.addEventListener("click", () => {
     taskList.removeChild(li);
