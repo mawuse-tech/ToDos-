@@ -44,7 +44,7 @@ body {
   }
   
   button:hover {
-    background-color: rgb(240, 236, 236);
+    background-color: #e65c00;
   }
   
   ul {
@@ -58,6 +58,7 @@ body {
     align-items: center;
     padding: 0.5rem;
     border-bottom: 1px solid #eee;
+    cursor: pointer;
   }
   
   li.completed span {
@@ -70,5 +71,9 @@ body {
     border: none;
     color: red;
     cursor: pointer;
+  }
+
+  .delete-btn:hover{
+    background-color: #f8eeee;
   }
   
