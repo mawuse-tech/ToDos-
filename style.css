@@ -44,7 +44,7 @@ body {
   }
   
   button:hover {
-    background-color: rgb(240, 236, 236);
+    background-color: #e65c00;
   }
   
   ul {
@@ -70,5 +70,9 @@ body {
     border: none;
     color: red;
     cursor: pointer;
+  }
+
+  .delete-btn:hover{
+    background-color: #f8eeee;
   }
   
